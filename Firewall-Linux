@@ -1,0 +1,28 @@
+Firewall Linux command
+-----------------------
+
+Firewall-config
+Select Firewall
+Runtime configuration
+Permeanent configuration
+DHCP, Version 6 Client
+Https 
+Ftp
+Nfs
+Ntp
+SSH
+
+systemctl status
+firewall-cmd --hepl
+firewall-cmd --get-default-zone
+firewall-cmd --set-default=public
+firewall-cmd --get-active-zones
+firewall-cmd --version
+firewall-cmd --zone-public/home--list-interface
+firewall-cmd --add-interface=eth0--zone=home
+firewall-cmd --remove-interface=eth0 --zone=home
+firewall-cmd --get-service
+cat /etc/firewall/zones/xml
+firewall-cmd --Permeanent --add-forward=port=port=443:proto=tcp=port=88
+firewall-cmd --reload
+
